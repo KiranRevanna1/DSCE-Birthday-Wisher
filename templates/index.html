@@ -1,0 +1,48 @@
+<head>
+    <title>Home | DSCE BIRTHDAY WISHER</title>
+</head>
+{% extends 'base.html' %}
+{% block content %} 
+
+<section class="page-section clearfix">
+    <div class="container">
+        <div class="intro">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="https://i.imgur.com/XHNNzS1.jpg" alt="..." />
+            <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                <h2 class="section-heading mb-4">
+                    <span class="section-heading-upper">DSCE Birthday Wisher</span>
+                    <span class="section-heading-lower">Automatic Birthday Wisher</span>
+                </h2>
+                <p class="mb-3">Every Wishes of our Institution starts with bottom of our hearts, hand picked Wishers. Once you try it, our DSCE Birthday Wisher will be a blissful addition to your everyday morning routine - we guarantee it!</p>
+                <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="{% url 'dashboard' %}">Upload Data</a>
+                &nbsp;<a class="btn btn-primary btn-xl" href="{% url 'add_form' %}">Add Data</a></div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="page-section cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner bg-faded text-center rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Our Promise</span>
+                        <span class="section-heading-lower">To You</span>
+                    </h2>
+                    <p class="mb-0">DSCE Birthday Wisher is an automatic birthday wisher that sends email to your friends on their birthday without bothering you.
+                        Just upload an excelsheet or add data manually and leave everything to us.</p>
+                     <h3 class="section-heading mb-4">
+                        <span class="section-heading-lower">Stop Missing Birthdays</span>
+                        <span class="section-heading-lower">and</span>
+                        <span class="section-heading-lower">Start Wishing Now!!</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+</body>
+
+</html>
+
+{% endblock %}
