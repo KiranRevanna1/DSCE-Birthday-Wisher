@@ -13,12 +13,14 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from xml.dom.minidom import Document
 from sender import execute
 from django.contrib import admin
 from django.urls import path
 from uploader.views import about, campus, home, dashboard, uploader, add_form
 from sender.views import sender, email_temp
 from django.views.generic import TemplateView
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -32,3 +34,4 @@ urlpatterns = [
     path('sender/', sender, name="sender"),
     path('wish/<str:sender>/<str:receiver>/', email_temp, name="email_temp")
 ]
+
